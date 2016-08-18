@@ -5,11 +5,6 @@
 
 # Throw this in a crontab with */1 * * * * for maximium tunnel capacity.
 
-if [ "$EUID" -ne 0 ]; then
-	echo "Please run as root"
-	exit
-fi
-
 ppp0Check1=$(ifconfig | grep -c ppp0);
  
 if [ "$ppp0Check1" = 0 ]; then
