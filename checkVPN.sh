@@ -19,3 +19,4 @@ else
 	echo "CASSA VPN Should be up."
 fi
 echo "CASSA VPN Should be up."
+
