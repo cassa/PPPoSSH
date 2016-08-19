@@ -9,7 +9,7 @@ if(ppp0Check1.chomp == "0")
 
 	ppp0Check2 = `ifconfig | grep -c ppp0`
 
-	if(ppp0Check2.chomp == "1") then
+	if(ppp0Check2.chomp == "1")
 		puts "PPP Tunnel interface is present on ppp0"
 		puts "Replacing default route with ppp0 endpoint"
 		
